@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <button class="open-field__btn btn btn-dark m-3">Open field</button>
+   <div class="field">
+      <img src="https://js.cx/clipart/ball.svg" class="ball">
+      <button class="btn btn-danger close-field__btn">Close</button>
+   </div>
+   <div class="form__container">
+      <form class="form">
+         <div class="form__first-step">
+            <div class="row mb-3">
+               <label for="name">Your Name</label>
+               <input class="form-control" id="name" name="name" type="text">
+            </div>
+            <div class="row mb-3">
+               <label for="last-name">Your Last name</label>
+               <input class="form-control" id="last-name" name="last-name" type="text">
+            </div>
+
+            <div class="row mb-2">
+               <button class="btn btn-secondary form__next-btn w-100" href="#">next</button>
+            </div>
+         </div>
+
+         <div class="form__second-step d-none">
+            <div class="row mb-3">
+               <label for="email">Email</label>
+               <input class="form-control" id="email" name="email" type="email">
+
+            </div>
+            <div class="row mb-3">
+               <label for="number">Phone Number</label>
+               <input class="form-control" id="number" name="number" type="number">
+               <div id="emailHelp" class="form-text">We'll never share your email and phone number with anyone else.
+               </div>
+            </div>
+            <div class="row mb-2">
+               <button class="btn btn-primary w-100" type="submit">Submit</button>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <script src="./main.js"></script>
+   <script src="https://js.cx/libs/animate.js"></script>
+</body>
+
+</html>
