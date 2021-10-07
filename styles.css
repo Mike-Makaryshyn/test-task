@@ -52,6 +52,10 @@ input[type="number"] {
    top: 0;
 }
 
+.pos-relative {
+   position: relative;
+}
+
 .form__container {
    height: 100vh;
    display: flex;

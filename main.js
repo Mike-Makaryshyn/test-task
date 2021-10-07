@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',(event) => {
+document.addEventListener('DOMContentLoaded',() => {
 
    const firstStep = document.querySelector('.form__first-step');
    const secondStep = document.querySelector('.form__second-step');
@@ -13,15 +13,11 @@ document.addEventListener('DOMContentLoaded',(event) => {
       firstStep.classList.add('d-none');
       secondStep.classList.remove('d-none');
    }
-   const openFieldHandler = () => {
+
+   const toggleFieldHandler = () => {
       ballContainer.classList.toggle('return-field');
+      ballContainer.classList.toggle('pos-relative');
       openBtn.classList.toggle('d-none');
-      ballContainer.style.position = 'relative'
-   }
-   const closeFieldHandler = () => {
-      ballContainer.classList.toggle('return-field');
-      openBtn.classList.toggle('d-none');
-      ballContainer.style.position = 'absolute'
    }
 
    const myMove = () => {
@@ -39,8 +35,7 @@ document.addEventListener('DOMContentLoaded',(event) => {
    }
 
    nextBtn.addEventListener('click',nextStep)
-   openBtn.addEventListener('click',openFieldHandler)
-   closeBtn.addEventListener('click',closeFieldHandler)
+   openBtn.addEventListener('click',toggleFieldHandler)
+   closeBtn.addEventListener('click',toggleFieldHandler)
    ball.addEventListener('click',myMove)
-
 });
