@@ -1,6 +1,6 @@
 # test-task
 
-Applying for junior FrontEnd JS/React.JS developer position
+Applying for a junior FrontEnd developer 
 
 link:
 
